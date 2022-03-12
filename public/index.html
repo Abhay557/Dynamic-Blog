@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!--Axios CDN just in case-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--My files-->
+    <script src="javascripts/main.js"></script>
+    <script type="text/javascript"src="apiManip.js">
+
+    </script>
+    <title>Axios Blog</title>
+  </head>
+  <body class="container">
+    <main class="row">
+      <nav class="col-12 text-center">
+        <h1>Axios Blog</h1>
+        <div id="forms" class = "invisibleF">
+          <form>
+            <input id = "inputH" type = 'text' placeholder = 'header'></input>
+            <input id = "inputP" type = 'text' placeholder='body'></input>
+            <input id = 'sub' type='submit' value = 'post'></input>
+          </form>
+        </div>
+        <div id="id" class = "invisibleN">
+          <form>
+            <input id = "updateH" type = 'text' placeholder = 'header update'></input>
+            <input id = "updateP" type = 'text' placeholder='body update'></input>
+            <input id = "number" type="text" placeholder="number">
+            <input id = 'update' type='submit' value = 'patch'></input>
+          </form>
+        </div>
+        <div id="del" class="invisibleD">
+          <input id="deleteId" type="text" placeholder="delete this number">
+          <input id="delB"type="submit" value="delete">
+        </div>
+      </nav>
+    </main>
+    <main class="row">
+      <article id = "posts" class="col-3"></article>
+      <article id="selected" class="col-6"></article>
+      <article id = "buttons" class="col-3">
+        <button id="createButton" type="button" name="button">Make post</button>
+        <button id="updateButton" type="button" name="button">Edit post by number</button>
+        <button id = "deleteButton" type="button" name="button">Delete post by number</button>
+      </article>
+    </main>
+  </body>
+</html>

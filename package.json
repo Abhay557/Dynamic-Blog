@@ -1,0 +1,24 @@
+{
+  "name": "ajax-blog",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www & live-server public"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "knex": "^0.15.2",
+    "mecha-js": "^0.1.4",
+    "morgan": "~1.9.0",
+    "pg": "^6.4.2",
+    "uuid": "^3.1.0"
+  }
+}
