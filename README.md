@@ -1,3 +1,3 @@
+Blog Website Template.
 
-
-[click me](http://frozen-castle-62921.herokuapp.com/)
+[Live Demo](https://ajaxblog.agents-ofof.repl.co/)
